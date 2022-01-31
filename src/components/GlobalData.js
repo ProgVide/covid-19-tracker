@@ -8,7 +8,8 @@ export default function GlobalData() {
 
   const [globalData, setGlobalData] = useState('The Global State is Empty');
   const [dataLoading, setDataLoading] = useState(false);
-  useEffect(async () => {
+  useEffect( () => {
+    const fetchMyAPI =  async () => {
     setDataLoading(true);
     const apiResponse = await fetch('https://api.apify.com/v2/key-value-stores/SmuuI0oebnTWjRTUh/records/LATEST?disableRedirect=true');
   
@@ -18,6 +19,8 @@ export default function GlobalData() {
    // console.log(globalData);
 
     setDataLoading(false);
+    };
+    fetchMyAPI();
   },[]);
 
   // Old Method
