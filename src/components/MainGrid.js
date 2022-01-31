@@ -5,9 +5,9 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import GlobalData from './GlobalData';
 //import Chartn from './Chartn';
-import Viss from './Viss.tsx';
+//import Viss from './Viss.tsx';
 import TestC from './TestC';
-import Old from './Old';
+//import Old from './Old';
 
 
 const Item = styled(Paper)(({ theme }) => ({
