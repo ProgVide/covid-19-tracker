@@ -10,7 +10,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
-import * as faker from 'faker';
+//import * as faker from 'faker';
 
 ChartJS.register(
   CategoryScale,
